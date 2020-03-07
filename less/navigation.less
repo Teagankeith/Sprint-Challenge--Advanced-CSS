@@ -1,1 +1,35 @@
 // Navigation code here
+
+.navigation {
+    background-color: @nav-bg;
+    text-align:center;
+    height: 100px;
+    width: 100%;
+
+    h1{
+        .flexbox();
+        font-size: 5rem;
+        align-items:center;
+        text-align:center;
+    }
+
+    .nava {
+        .flexbox();
+        width: 25%;
+        margin-left: 37%;
+
+        @media @mobile {
+            width: 100%;
+            justify-content: space-evenly;
+            margin-left: 0;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: @nav-font;
+        font-size: 1.7rem;
+        margin-top: 4%;
+    }
+}
